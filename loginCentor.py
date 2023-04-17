@@ -10,7 +10,6 @@ driver.implicitly_wait(5)
 
 # Enter incorrect password
 cust_fun.find_element_by_name(driver, [{'field': 'empid', 'value': "mis1011"}, {'field': 'password', 'value': "Q!W@e3r4t"}], 'login')
-
 driver.back()
 
 driver .get("http://localhost/centaur/")

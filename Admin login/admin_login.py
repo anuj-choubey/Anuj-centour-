@@ -12,6 +12,11 @@ driver= webdriver.Chrome(executable_path="chromedriver.exe")
 driver.implicitly_wait(3)
 driver .get("http://localhost/centaur/")
 driver.find_element_by_link_text("Click here").click()
+
+# Wrong password Enter
+cust_fun.find_element_by_name(driver, [{'field': 'email', 'value': "centura001"}, {'field': 'password', 'value': "centura@32"}])
+driver.find_element_by_class_name("btn-block").click()
+time .sleep(4)
 # admin login
 cust_fun.find_element_by_name(driver, [{'field': 'email', 'value': "centura001"}, {'field': 'password', 'value': "centura@321"}])
 driver.find_element_by_class_name("btn-block").click()

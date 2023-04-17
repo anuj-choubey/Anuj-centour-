@@ -1,6 +1,6 @@
 import selenium
 from selenium import webdriver
-from helpersUsers import cust_fun
+from helpersAdmin import cust_fun
 driver= selenium.webdriver.Chrome(executable_path="chromedriver.exe")
 driver.implicitly_wait(3)
 driver .get("http://localhost/centaur/")
@@ -22,5 +22,5 @@ Today = presentday.strftime('%d-%m-%Y')
 cust_fun.find_element_by_name(driver, [{'field': 'min', 'value': Yesterday}])
 cust_fun.find_element_by_name(driver, [{'field': 'max', 'value': Today}])
 
-# driver.find_element_by_link_text("Click").click()
-cust_fun.find_elements_by_link_text(driver, [{'field': 'Click', 'value': "5"}])
+# Error date and time dobble print
+
